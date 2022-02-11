@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import GoodyApp from "./Message";
+import Message from './Message';
 
 
   function App(props){
@@ -11,6 +12,7 @@ import GoodyApp from "./Message";
       My Mega app
       <h3>My name {props.myName}</h3>
     </header>
+    <Message name={'Goody'} />
     </div>
   
   );

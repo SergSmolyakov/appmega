@@ -1,4 +1,4 @@
-function message(){
-    return <div>ddd</div>
+function Message(props){
+    return <div> {props.name}</div>
 }
-export default message;
+export default Message;
