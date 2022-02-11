@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import GoodyApp from "./message";
 import reportWebVitals from './reportWebVitals';
+
+const name='SergSV'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+        <App myName={name} showGreen  />    
   </React.StrictMode>,
   document.getElementById('root')
 );

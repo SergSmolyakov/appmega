@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import GoodyApp from "./message";
 
-function App() {
+
+  function App(props){
+  const fontSizeHeader = '50px';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header className={`App-header ${props.showGreen ? 'header-green' : 'header-blue'}`} style={{top:fontSizeHeader}}>
+        My Mega app
+      <h3>My name {props.myName}</h3>
+    </header>
     </div>
+  
   );
-}
+
+  }
+ 
+   
 
 export default App;
