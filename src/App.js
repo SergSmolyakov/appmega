@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import GoodyApp from "./message";
+import GoodyApp from "./Message";
 
 
   function App(props){
@@ -8,7 +8,7 @@ import GoodyApp from "./message";
   return (
     <div>
       <header className={`App-header ${props.showGreen ? 'header-green' : 'header-blue'}`} style={{top:fontSizeHeader}}>
-        My Mega app
+      My Mega app
       <h3>My name {props.myName}</h3>
     </header>
     </div>
