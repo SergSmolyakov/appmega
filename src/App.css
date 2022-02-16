@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  padding-top: 50px;
+  font-size: 25px;
+  color:bisque;
+  background-color: #61dafb;
 }
 
 .App-logo {
@@ -35,4 +39,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header-green {
+  background-color: aquamarine;
+}
+.header-blue {
+  background-color: blue;
+}
+.counter {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  min-width: 200px;
+  text-align: center;
+  margin-bottom: 25px;  
+}
+.counter-btn {
+  display: block;
+  padding: 5px;
+}
+.messageBox {
+  display: flex;
+  padding: 7px;  
+  width: 300px;  
+}
+.author {
+  font-size: 15px;
+}
+.messenger {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  height: 500px;
+  min-width: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
 }
