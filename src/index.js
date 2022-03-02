@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from '@material-ui/core';
+import theme from "./theme/theme"
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
+
+const name='SergSV'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>      
+        <App /> 
+      </BrowserRouter>
+        </ThemeProvider>
+        </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
